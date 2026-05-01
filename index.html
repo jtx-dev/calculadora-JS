@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js" defer></script>
+    <title>Calculadora + javaScript</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <div class="nav-izquierda">
+                <div>
+                    <span>Hecho con</span>
+                </div>
+                <div>
+                    <img id="js-logo" src="js-logo.webp">
+                    
+                    <img id="css-logo" src="css-logo.png">
+                  
+                    <img id="html-logo" src="html-logo.png">
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="contenedor-principal">
+        <div class="repo-github">
+            <button><a href="https://github.com/jtx-dev/calculadora-JS"><img src="github-white-icon.webp" alt="logo-github-blanco"></a></button>
+            <br><span>Repositorio <br> GitHub</span>
+        </div>
+eeeeeee
+        <div class="contenedor-calculadora">
+            <div class="contenedor-centrado">
+                <div id="datos-entrada">
+                    <input id="barrita-operaciones" type="text">
+                </div>
+                <div class="contenedor-botones">
+                    <div class="botones-numeros">
+                        <div class="numeros-superiores">
+                            <button onclick="agregar_numero('1')">1</button>
+                            <button onclick="agregar_numero('2')">2</button>
+                            <button onclick="agregar_numero('3')">3</button>
+                        </div>
+                        <div class="numeros-medio">
+                            <button onclick="agregar_numero('4')">4</button>
+                            <button onclick="agregar_numero('5')">5</button>
+                            <button onclick="agregar_numero('6')">6</button>
+                        </div>
+                        <div class="numeros-inferiores">
+                            <button onclick="agregar_numero('7')">7</button>
+                            <button onclick="agregar_numero('8')">8</button>
+                            <button onclick="agregar_numero('9')">9</button>
+                        </div>
+                        <div class="numero-cero">
+                            <button onclick="agregar_numero('0')">0</button>
+                            <button onclick="limpiar_barra()">CE</button>
+                        </div>
+                    </div>
+                    <div class="botones-operaciones">
+                        <button onclick="agregar_operacion('+')">+</button>
+                        <button onclick="agregar_operacion('-')">-</button>
+                        <button onclick="agregar_operacion('*')">x</button>
+                        <button onclick="agregar_operacion('/')">/</button>
+                        <button onclick="resolver_operacion()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
